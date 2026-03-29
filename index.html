@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-50">
         <h1 class="text-2xl">GREENDEN</h1>
 
 
@@ -25,11 +25,21 @@
             <li>
                 <a class="hover:underline hover:text-black" href="index.html">Home</a>`
             </li>
-            <li>
-                <a class="hover:underline hover:text-black" href="Product.html">Products</a>
+            <li class="relative group">
+                <a class="hover:underline hover:text-black cursor-pointer">Products</a>
+                <div
+                    class="absolute left-0 top-full w-40 bg-white shadow-lg rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200">
+
+                    <a href="Bouquet.html" class="block px-4 py-2 hover:bg-green-100">Bouquet</a>
+
+                    <a href="product.html" class="block px-4 py-2 hover:bg-green-100">Plants Pot</a>
+
+                    <a href="Seeds&Bulbs.html" class="block px-4 py-2 hover:bg-green-100">Seeds & Bulbs</a>
+
+                </div>
             </li>
-            <li>
-                <a class="hover:underline hover:text-black" href="Contact.html">Contact</a>
+            </li>
+            <a class="hover:underline hover:text-black" href="Contact.html">Contact</a>
             </li>
         </ul>
     </nav>
@@ -40,19 +50,21 @@
             <h1 class="font-bold text-3xl md:text-5xl mb-5 ">Plants for your Interior</h1>
 
             <div>
-                <button class="bg-black rounded p-2 text-white mb-5">Shop Now</button>
-                <button class="border border-black rounded p-2">Watch Videos</button>
+                <button class="bg-black rounded p-2 text-white mb-5 hover:transform hover:-translate-y-1">Shop
+                    Now</button>
+                <button class="border border-black rounded p-2 hover:transform hover:-translate-y-1">Watch
+                    Videos</button>
             </div>
             <p>160+ Plant Species | 100+ Clients</p>
         </div>
         <div class="hidden md:flex p-5">
-            <img src="./images/sec img.jpg" alt="pant pot" class="w-60">
+            <img src="./images/sec img.jpg" alt="pant pot" class="w-60 animate-pulse">
         </div>
     </section>
     <!-- About Section -->
     <section class="text-center">
         <h1 class="text-3xl font-bold mt-5">About Us</h1>
-        <p class= "mt-5">This site foe those who admire the beauty and harmony of nature</p>
+        <p class="mt-5">This site foe those who admire the beauty and harmony of nature</p>
         <div class="md:flex">
             <div class="border border-black p-2 m-5">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -64,9 +76,10 @@
 
 
                 <h1 class="text-xl font-medium">Large Assortment</h1>
-                <p>Lorem ipsum dolor sit amet consectetur met consectetur adipisicing elit. Expedita consectetur
-                    delectus quas dolorem animi, blanditiis tenetur architecto quisquam adipisci itaque nesciunt sequ
-                    itaque nesciunt sequi facere non iure vel excepturi, labore recusandae accusantium!</p>
+                <p>Discover a wide range of premium plant pots and beautifully arranged bouquets designed to suit every
+                    taste and occasion. From modern minimal styles to classic elegant designs, our collection offers
+                    something for everyone. Carefully curated selections ensure quality, variety, and style, making it
+                    easy to find the perfect choice for décor or gifting needs!</p>
 
             </div>
             <div class="border border-black p-2 m-5">
@@ -78,9 +91,10 @@
 
 
                 <h1 class="text-xl font-medium">Free and Fast Shipping</h1>
-                <p>Lorem ipsum dolor sit amet consectetur met consectetur adipisicing elit. Expedita consectetur
-                    delectus quas dolorem animi, blanditiis tenetur architecto quisquam adipisci itaque nesciunt sequ
-                    itaque nesciunt sequi facere non iure vel excepturi, labore recusandae accusantium!</p>
+                <p>Enjoy fast and reliable shipping that ensures your plant pots and bouquets arrive fresh, secure, and
+                    on time. We prioritize careful packaging and efficient delivery processes to maintain product
+                    quality. Whether it’s a last-minute gift or planned purchase, our quick dispatch and timely service
+                    guarantee a smooth and dependable shopping experience every time.!</p>
 
             </div>
             <div class="border border-black p-2 m-5">
@@ -91,76 +105,116 @@
                 </svg>
 
                 <h1 class="text-xl font-medium">24/7 Support</h1>
-                <p>Lorem ipsum dolor sit amet consectetur met consectetur adipisicing elit. Expedita consectetur
-                    delectus quas dolorem animi, blanditiis tenetur architecto quisquam adipisci itaque nesciunt sequ
-                    itaque nesciunt sequi facere non iure vel excepturi, labore recusandae accusantium!</p>
+                <p>Our dedicated customer support team is available 24/7 to assist you with any questions, orders, or
+                    concerns. We are committed to providing prompt, helpful, and friendly service at all times. From
+                    product guidance to order tracking, we ensure a seamless experience, giving you complete confidence
+                    and satisfaction with every purchase you make.</p>
 
             </div>
         </div>
     </section>
     <!-- Best Seller -->
-     <section class="p-4 text-center">
+    <section class="p-4 text-center">
         <h1 class="font-bold text-3xl ">Best Seller</h1>
-       <div class="grid grid-cols-2 md:grid-cols-4 mt-10 gap-10">
-        <div>
-            <img src="images/Bs1.jpg" class="inline hover:shadow-xl hover:transform hover:-translate-y-2"  alt="">
-            <h1>Rosalind</h1>
-            <p>$20</p>
-        </div>
-        <div>
-            <img src="images/Bs2.jpg"class="inline hover:shadow-xl hover:transform hover:-translate-y-2"  alt="">
-            <h1>Crimson Cascade</h1>
-            <p>$30</p>
-        </div>
-        <div>
-            <img src="images/Bs3.jpg" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
-            <h1>Ivory Veil Bloom</h1>
-            <p>$25</p>
-        </div>
-        <div>
-            <img src="images/Bs4.jpg" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
-            <h1>Golden Thread Orchid</h1>
-            <p>$30</p>
-        </div>
-
-       </div>
-
-     </section>
-     <!-- Review Section -->
-      <section class="p-4 text-center">
-            <h1 class="font-bold text-3xl">Customer Reviews</h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-10 gap-10">
             <div>
-                <div class="bg-green-900 mt-5 text-left p-5">
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo praesentium magnam deleniti odio. Ducimus ad vitae, dignissimos incidunt quo non, numquam quibusdam suscipit ut debitis quia sapiente neque architecto!</p>
-                    <p class="text-amber-400 font-bold">Genny Mathew</p>
+                <img src="images/Bs1.jpg" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
+                <h1>Rosalind</h1>
+                <p>★★★☆☆(989reviews)</p>
+                <p>$20 <del>$30</del></p>
+            </div>
+            <div>
+                <img src="images/Bs2.jpg" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
+                <h1>Crimson Cascade</h1>
+                <p>★★★☆☆(989reviews)</p>
+                <p>$30 <del>$40</del></p>
+            </div>
+            <div>
+                <img src="images/Bs3.jpg" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
+                <h1>Ivory Veil Bloom</h1>
+                <p>★★★★★(989reviews)</p>
+                <p>$25 <del>$30</del></p>
+            </div>
+            <div>
+                <img src="images/Bs4.jpg" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
+                <h1>Golden Thread Orchid</h1>
+                <p>★★★★☆(989reviews)</p>
+                <p>$30 <del>$35</del></p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Review Section -->
+    <section class="relative bg-green-100 py-16 text-center overflow-hidden">
+
+        <!-- Background Image (Man Illustration) -->
+        <img src="./images/rev.jpg" class="absolute left-0 bottom-0 w-96 h-full opacity-50 z-0 hidden md:block"
+            alt="customer illustration">
+        <img src="./images/rev 5.jpg" class="absolute right-0 bottom-0 w-fit h-full opacity-60 z-0 hidden md:block"
+            alt="customer illustration">
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-5xl mx-auto px-6">
+
+            <h1 class="font-bold text-3xl mb-8 ">What our Happy Clients Says</h1>
+
+
+            <!-- Reviews -->
+            <div class="space-y-6 text-left">
+
+                <div class="bg-green-900 text-white p-5 rounded-lg shadow-md">
+                    <p>
+                        Absolutely loved the plant pots, bouquet and seeds I purchased. The pots are sturdy with a premium
+                        finish, and the bouquet was fresh and beautifully arranged. Delivery was quick and packaging was
+                        neat. Will definitely order again for future occasions.
+                    </p>
+                    <p class="text-amber-400 font-bold mt-2">Kane Williamson</p>
                 </div>
-                 <div class="bg-green-900 mt-5 text-left p-5">
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo praesentium magnam deleniti odio. Ducimus ad vitae, dignissimos incidunt quo non, numquam quibusdam suscipit ut debitis quia sapiente neque architecto!</p>
-                    <p class="text-amber-400 font-bold">Sonay Hays</p>
+
+                <div class="bg-green-900 text-white p-5 rounded-lg shadow-md">
+                    <p>
+                        Great quality products at a reasonable price. The plant pots add a stylish touch to my space,
+                        the bouquet looked elegant & vibrant.
+                    </p>
+                    <p class="text-amber-400 font-bold mt-2">Ana de Armas</p>
                 </div>
-                 <div class="bg-green-900 mt-5 text-left p-5">
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo praesentium magnam deleniti odio. Ducimus ad vitae, dignissimos incidunt quo non, numquam quibusdam suscipit ut debitis quia sapiente neque architecto!</p>
-                    <p class="text-amber-400 font-bold">Randy Ortan</p>
+
+                <div class="bg-green-900 text-white p-5 rounded-lg shadow-md">
+                    <p>
+                        Very satisfied with my purchase. The bouquet & seeds are exceeded expectations with its freshness and
+                        fragrance.I appreciate the attention to detail and overall presentation. Everything arrived in
+                        perfect condition & Will buy again soon.
+                    </p>
+                    <p class="text-amber-400 font-bold mt-2">Randy Ortan</p>
                 </div>
 
             </div>
-    
-      </section>
-      <!-- Newsletter Section -->
-       <section class="text-center mt-5">
+
+        </div>
+    </section>
+    <!-- Newsletter Section -->
+    <section class="text-center mt-5">
         <h1 class=" font-bold text-3xl m-3">Join our news Letter</h1>
         <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
-        <input type="text" class="border border-black m-3 p-2 " style="width: 80%;">
+        <input type="text" placeholder="Enter your mail id" class="border border-black m-3 p-2 " style="width: 80%;">
         <div>
-        <button class="bg-black text-white p-2 m-3 underline">Subscribe</button></div>
-       </section>
+            <button class="bg-black rounded p-2 text-white p-2 m-3 animate-bounce ">Subscribe</button>
+        </div>
+    </section>
 
-<!-- Fotter Section -->
- <section class="bg-green-100 p-5 flex flex-col gap-5">
-  <h1 class="font-bold text-4xl">Greenden</h1>
-    <p>The Standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interest</p>
-    <p>@2021Greenden.com </p>
- </section>
+    <!-- Fotter Section -->
+    <section class="bg-green-100 p-5 flex flex-col gap-5">
+        <h1 class="font-bold text-4xl">Greenden</h1>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interest</p>
+        <div class="flex gap-2">
+            <img src="images/facebook.png" class="w-8" alt="">
+            <img src="images/twitter.png" class="w-8" alt="">
+            <img src="images/instagram.png" class="w-8" alt="">
+            <img src="images/youtube.png" class="w-8" alt="">
+        </div>
+        <p>@2021Greenden.com </p>
+    </section>
 </body>
 
 </html>
